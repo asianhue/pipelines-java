@@ -11,9 +11,6 @@ resources:
     - repository: Repo1
       type: git
       name: asian/pipelines-java
-    - repository: Repo2
-      type: git
-      name: asian/desktop-tutorial
 
 pool:
   vmImage: ubuntu-latest
