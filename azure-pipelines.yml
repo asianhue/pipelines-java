@@ -20,7 +20,5 @@ pool:
 jobs:
 
 - job: helloworld
-  condition: 1=1
   steps:
-    - checkout: self
     - script: echo "Hello, $(name)"
