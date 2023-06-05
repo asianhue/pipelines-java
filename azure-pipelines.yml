@@ -10,7 +10,7 @@ resources:
   repositories:
     - repository: Repo1
       type: git
-      name: asianhue/pipelines-java
+      name: asianhue.pipelines-java
 
 pool:
   vmImage: ubuntu-latest
