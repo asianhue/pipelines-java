@@ -10,7 +10,7 @@ resources:
   repositories:
     - repository: Repo1
       type: git
-      name: asianhue/JavaDogList
+      name: asianhue/mslearn-tailspin-spacegame-web
     - repository: Repo2
       type: git
       name: asianhue/desktop-tutorial
