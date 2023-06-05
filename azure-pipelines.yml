@@ -26,4 +26,4 @@ steps:
 jobs:
 - job: helloworld
   steps:
-    - script: echo "Hello, SENOR"
+    - script: echo 'Hello, SENOR'
