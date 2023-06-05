@@ -5,44 +5,24 @@ trigger:
 
 - main
 
-# equivalents trigger
-# trigger:
-#  branches:
-#    include:
-#    - main
+trigger:
+- main
 
-variables:
-  name: John
+resources:
+  repositories:
+    - repository: Repo1
+      type: git
+      name: asianhue/JavaDogList
+    - repository: Repo2
+      type: git
+      name: asianhue/desktop-tutorial
 
 pool:
   vmImage: ubuntu-latest
 
-stages:
-
-- stage: Build
-  jobs:
-
-  - job: BuildJob
-    steps:
-
-    - script: echo Building!
-- stage: Test
-  dependsOn: Build
-  jobs:
-
-  - job: TestOnWindows
-    steps:
-
-    - script: echo Testing on Windows!
-  - job: TestOnLinux
-    steps:
-
-    - script: echo Testing on Linux!
-- stage: Deploy
-  dependsOn: Test
-  jobs:
-
-  - job: Deploy
-    steps:
-
-    - script: echo Deploying the code!
+steps:
+- script: echo "hello world"
+- checkout: Repo1
+- script: echo Task runs against Repo1
+- checkout: Repo2
+- script: echo tastk runs against repo2
