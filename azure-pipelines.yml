@@ -10,7 +10,7 @@ resources:
   repositories:
     - repository: Repo1
       type: git
-      name: asian/mslearn-tailspin-spacegame-web
+      name: asian/pipelines-java
     - repository: Repo2
       type: git
       name: asian/desktop-tutorial
