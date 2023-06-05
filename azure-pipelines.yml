@@ -10,10 +10,10 @@ resources:
   repositories:
     - repository: Repo1
       type: git
-      name: asianhue/mslearn-tailspin-spacegame-web
+      name: mslearn-tailspin-spacegame-web
     - repository: Repo2
       type: git
-      name: asianhue/desktop-tutorial
+      name: desktop-tutorial
 
 pool:
   vmImage: ubuntu-latest
